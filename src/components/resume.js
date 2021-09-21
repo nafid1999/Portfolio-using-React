@@ -3,6 +3,8 @@ import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
 import Skills from './skills'
+import { mySelf } from '../my_infos';
+
 
 class Resume extends Component{
   render(){
@@ -17,18 +19,18 @@ class Resume extends Component{
                 style={{height: '200px'}}
                 />
             </div>
-            <h2 style={{paddingTop: '2em'}}>Omar Dakkak</h2>
-            <h4 style={{color: 'grey'}}>Programmer</h4>
+            <h2 style={{paddingTop: '2em'}}>{mySelf.name}</h2>
+            <h4 style={{color: 'grey'}}>Software Programmer</h4>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
             eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
             <h5>Adress</h5>
-            <p>41, Bloc 4, Hay Al Andalous, Taza, Morocco</p>
+            <p>Morocco,Dar El Kebdani Driouch</p>
             <h5>Phone</h5>
-            <p>+212 6 50 58 48 61</p>
+            <p>{mySelf.phone} </p>
             <h5>Email</h5>
-            <p>omardakkak98@gmail.com</p>
+            <p>{mySelf.email}</p>
             <h5>Web</h5>
             <p>mywebsite.com</p>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>

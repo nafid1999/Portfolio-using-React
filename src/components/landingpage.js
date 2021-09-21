@@ -7,7 +7,7 @@ class Landing extends Component{
       <div style = {{width: '100%', margin: 'auto'}}>
         <Grid className="landing-grid">
         <Cell col={12}>
-        <img src="myAvatar.png" alt="avatar" className="avatar-img"/>
+        <img src="https://cdn4.iconfinder.com/data/icons/men-avatars-set-1-dot-version/380/17-512.png" alt="avatar" className="avatar-img"/>
         <div className="banner-text">
           <h1> Computer Science student</h1>
           <hr/>
@@ -17,7 +17,7 @@ class Landing extends Component{
           <div className="social-links">
             {/* LinkedIn*/}
             <a href="https://google.com" rel="noopener norefferrer" target="_blank">
-            <i className="fa fa-linkedin-square" aria-hidden="true"/>
+            <i className="fa fa-linkedin-square" />
             </a>
             {/* Github*/}
             <a href="https://google.com" rel="noopener norefferrer" target="_blank">

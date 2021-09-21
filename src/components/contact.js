@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Grid, Cell, List, ListItem, ListItemContent} from 'react-mdl';
+import { mySelf } from '../my_infos';
 
 class Contact extends Component{
   render(){
@@ -7,13 +8,13 @@ class Contact extends Component{
       <div className="contact-body">
         <Grid className="contact-grid">
           <Cell col={6}>
-            <h2>Omar Dakkak </h2>
+            <h2>{mySelf.name} </h2>
             <img
               src="https://cdn4.iconfinder.com/data/icons/men-avatars-set-1-dot-version/380/17-512.png"
               alt="avatar"
               style={{height: '250px' }}
             />
-            <p style={{width: '75%', margin: 'auto', paddingTop: '1em'}}>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <h6 style={{width: '75%', margin: 'auto', paddingTop: '1em'}}>{mySelf.about_me} </h6>
           </Cell>
           <Cell col={6}>
             <h2>Contact Me!</h2>
@@ -23,13 +24,13 @@ class Contact extends Component{
                 <ListItem>
                   <ListItemContent style={{fontSize: '30px', fontFamily:'Anton'}}>
                     <i className="fa fa-phone-square" aria-hidden="true"/>
-                    +212 6 50 58 48 61
+                    {mySelf.phone}
                   </ListItemContent>
                 </ListItem>
                 <ListItem>
                   <ListItemContent style={{fontSize: '30px', fontFamily:'Anton'}}>
                     <i className="fa fa-envelope" aria-hidden="true"/>
-                    omardakkak98@gmail.com
+                    {mySelf.email}
                   </ListItemContent>
                 </ListItem>
               </List>
