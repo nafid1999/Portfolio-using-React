@@ -38,8 +38,8 @@ class Resume extends Component{
           <Cell className="resume-right-col" col={8}>
             <h2>Education</h2>
             <Education
-              startYear={2016}
-              endYear={2021}
+              startYear={2017}
+              endYear={2022}
               schoolName="National School of Applied Sciences of Al Hoceïma"
               schoolDescription="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi"
             />
@@ -55,31 +55,31 @@ class Resume extends Component{
             <h2>Skills</h2>
             <Skills
               skill="JavaScript"
-              progress={41}
-            />
-            <Skills
-              skill="HTML5/CSS3"
               progress={80}
             />
             <Skills
-              skill="C++"
-              progress={50}
+              skill="HTML5/CSS3"
+              progress={70}
             />
             <Skills
-              skill="C"
-              progress={40}
+              skill="java"
+              progress={75}
             />
             <Skills
-              skill="Python"
-              progress={41}
+              skill="Spring boot"
+              progress={70}
             />
             <Skills
-              skill="Deep Learning"
-              progress={49}
+              skill="laravel 8"
+              progress={75}
             />
             <Skills
-              skill="Machine Learning"
-              progress={58}
+              skill="React Js"
+              progress={70}
+            />
+            <Skills
+              skill="Php"
+              progress={70}
             />
           </Cell>
         </Grid>
