@@ -81,6 +81,10 @@ class Resume extends Component{
               skill="Php"
               progress={70}
             />
+             <Skills
+              skill=" Hibernate"
+              progress={70}
+            />
           </Cell>
         </Grid>
       </div>
